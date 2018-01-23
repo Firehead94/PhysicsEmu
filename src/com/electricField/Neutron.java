@@ -1,11 +1,12 @@
 package com.electricField;
 
+import com.units.BaseUnit;
 import com.units.Coulomb;
-import com.units.Kilogram;
 
-public class Neutron {
+public class Neutron extends Particle {
 
-    Coulomb charge = new Coulomb(0, 0);
-    Kilogram mass = new Kilogram(1.67, -27);
+    public Neutron() {
+        super(new Coulomb(0, 0), new BaseUnit(1.67, -27, "kg"));
+    }
 
 }

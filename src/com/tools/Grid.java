@@ -1,18 +1,24 @@
 package com.tools;
 
+import com.units.BaseUnit;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class Grid {
 
-    Map<String, Point> object = new HashMap<String, Point>();
+    Map<Character, Point> grid = new HashMap<>();
+    BaseUnit units;
 
-    Grid(){
+    public Grid(){}
 
+    public void addPoint(char c, Point p) {
+        grid.put(c, p);
     }
 
-    boolean addPoint(char c, Point p) {
-        object.put(String.valueOf(c), p);
-        return true;
+    public Point getPoint(char c) {
+
+        return grid.get(c);
     }
+
 }

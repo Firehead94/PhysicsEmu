@@ -1,14 +1,13 @@
 package com.tools;
 
+import com.electricField.Particle;
+
 public class Point {
 
-    double x, y, z;
+    Particle p;
+    public double x, y, z;
 
-    Point(){
-        this(0, 0);
-    }
-
-    Point(double x, double y) {
+    public Point(double x, double y) {
         this(x, y, 0);
     }
 
@@ -16,6 +15,19 @@ public class Point {
         this.x = x;
         this.y = y;
         this.z = z;
+    }
+
+    public Point setP(Particle p) {
+        this.p = p;
+        return this;
+    }
+
+    public double getCharge() {
+        return this.p.getCharge();
+    }
+
+    public double getMass(){
+        return this.p.getMass();
     }
 
     public static double getDistance(Point a, Point b) {

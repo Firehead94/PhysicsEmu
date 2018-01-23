@@ -1,11 +1,12 @@
 package com.electricField;
 
+import com.units.BaseUnit;
 import com.units.Coulomb;
-import com.units.Kilogram;
 
-public class Proton {
+public class Proton extends Particle {
 
-    Coulomb charge = new Coulomb(1.6, -19);
-    Kilogram mass = new Kilogram(1.67, -27);
+    public Proton() {
+        super(new Coulomb(1.6, -19), new BaseUnit(1.67, -27, "kg"));
+    }
 
 }
