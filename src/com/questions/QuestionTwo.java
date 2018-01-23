@@ -12,12 +12,14 @@ public class QuestionTwo {
         Electron a = new Electron();
         Proton b = new Proton();
 
+        System.out.println("Question #2 --------------------------------------");
         System.out.println("a) " + getBalanceForce(a));
         System.out.println("b) " + getBalanceForce(b));
+        System.out.println("--------------------------------------------------");
 
     }
 
     private double getBalanceForce(Particle a) {
-        return a.getMass()* Constants.Gravity.trueValue() /a.getCharge()/10;
+        return a.getMass()* Constants.Gravity.trueValue() /a.getCharge();
     }
 }
