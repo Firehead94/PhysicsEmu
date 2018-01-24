@@ -7,7 +7,7 @@ import com.units.Speed;
 public class QuestionThree {
 
     public QuestionThree() {
-        ElectricField field = new ElectricField(670,0);
+        ElectricField field = new ElectricField(670,0, (byte)0);
         Speed speed = new Speed(1.30,6);
 
         System.out.println("Question #3 --------------------------------------");

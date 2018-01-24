@@ -10,6 +10,10 @@ public class Main {
         new QuestionThree();
         new QuestionFour();
         new QuestionFive();
+        new QuestionSix();
+        new QuestionSeven();
+
+        new QuestionTen();
     }
 
 

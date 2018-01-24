@@ -15,4 +15,23 @@ public class BaseUnit {
     public double trueValue() {
         return (double)Math.pow(10, orderOfMagnitude)*value;
     }
+
+    public double getValue() {
+        return value;
+    }
+
+    public int getOrderOfMagnitude() {
+        return orderOfMagnitude;
+    }
+
+    public BaseUnit increaseValue(double v, int type) {
+        switch(type) {
+            case 0: value += v;
+                break;
+            default: value *= v;
+        }
+
+        return this;
+
+    }
 }

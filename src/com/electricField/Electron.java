@@ -9,4 +9,10 @@ public class Electron extends Particle {
         super(new Coulomb(-1.6, -19), new BaseUnit(9.11, -31, "kg"));
     }
 
+
+    public static Coulomb getElectronCharge() {
+        
+        return new Coulomb(-1.6, -19);
+    }
+
 }
